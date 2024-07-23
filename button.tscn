@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://ccjy8x3jb45e0"]
+
+[node name="Shuffle" type="Button"]
+offset_left = 205.0
+offset_top = 427.0
+offset_right = 387.0
+offset_bottom = 551.0
+text = "Shuffle"

@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://teuocskk73ft"]
+
+[ext_resource type="Script" path="res://Scripts/GameBoard.cs" id="1_8uuxo"]
+[ext_resource type="PackedScene" uid="uid://ccjy8x3jb45e0" path="res://button.tscn" id="2_wok1o"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(-2, 3)
+
+[node name="Canvis" type="CanvasLayer" parent="."]
+
+[node name="GameBoard" type="Control" parent="Canvis"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -364.0
+offset_top = -249.0
+offset_right = 365.0
+offset_bottom = 249.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8uuxo")
+btnScene = ExtResource("2_wok1o")
+simpleWords = PackedStringArray("drive", "prompt", "propel", "push")
+mediumWords = PackedStringArray("draw", "reverse", "skip", "wild")
+hardWords = PackedStringArray("baseball", "grapefruit", "marble", "pea")
+complexWords = PackedStringArray("courtroom", "dugout", "gym", "park")
